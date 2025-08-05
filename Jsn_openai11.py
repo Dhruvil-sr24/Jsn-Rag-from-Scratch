@@ -40,7 +40,7 @@ class OpenAIEmbeddingModel:
     
     def __init__(self, model_name: str = "text-embedding-3-small"):
         self.client = openai.OpenAI(
-            api_key=os.getenv('OPENAI_API_KEY', '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')
+            api_key=os.getenv('OPENAI_API_KEY', 'key here')
         
         )
         self.model_name = model_name
@@ -905,7 +905,7 @@ class AdvancedQualificationEngine:
     def __init__(self, llm_model: str = "gpt-4o"):
         # Initialize OpenAI client
         self.client = openai.OpenAI(
-            api_key=os.getenv('OPENAI_API_KEY', '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')
+            api_key=os.getenv('OPENAI_API_KEY', 'key')
         )
         self.model_name = llm_model
 
@@ -4200,4 +4200,5 @@ if __name__ == "__main__":
         access_log=True,
         reload=True  # Set to True only in development
     )
+
 
